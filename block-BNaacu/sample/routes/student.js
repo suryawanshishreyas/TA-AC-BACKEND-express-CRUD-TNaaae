@@ -10,21 +10,22 @@ router.post('/',async(req,res)=>{
     try{
         const student = new Student(req.body);
         await student.save();
-        res.send(student);
+        res.send('<h2>Form submitted successfully</h2>');
     }
     catch(err){
         res.status(500).send(err);
     }
 })
 
+
 router.get('/',async(req,res)=>{
-    try{
-        const student = await Student.find();
-        await res.send(student);
-    }
-    catch(err){
-        res.status(500).send(err);
-    }
+    res.render("list", { list: ["Shreyas", "Rohan", "Pavan", "Jay"] });
+})
+
+router.get('/:id', async(req,res)=>{
+    res.render("studentDetail", {
+        student: { name: "rahul", email: "rahul@abc.io" },
+      });
 })
 
 module.exports = router;
