@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+</head>
+<body>
+    <h2>List of Users</h2>
+    <tr>
+        <% users.forEach((user)=>{  %>
+            <td>Name-<%= user.name %></td>
+            </br>
+            <td>Email-<%= user.email %></td>
+        </br>
+        <% })     %>
+    </tr>
+</body>
+</html>
