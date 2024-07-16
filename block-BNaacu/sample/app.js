@@ -16,6 +16,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/sample3'
 
 // middleware
 app.use(express.json());
+app.use(express.urlencoded({extended:false}));
 
 // setup view engine
 app.set("view engine", "ejs");
