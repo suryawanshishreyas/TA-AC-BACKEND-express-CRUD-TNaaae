@@ -32,7 +32,7 @@ router.get('/form',async(req,res)=>{
 
 // Form submission
 
-router.post('/form',async(req,res)=>{
+router.post('/',async(req,res)=>{
     const user = new User(req.body);
     await user.save();
     res.send('<h2>Form submission successful!</h2>');
