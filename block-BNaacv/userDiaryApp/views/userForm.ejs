@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+</head>
+<body>
+    <div style="display: flex; flex-direction: column; border: 1px solid blue; width: 500px; margin: 10px auto;">
+        <h2 style="color:green;
+            font-size: 60px;
+            text-align: center;">User Form</h2>
+        <form action="/users" method="POST" style="display: flex; flex-direction: column;align-content: space-between;align-items: center;">
+            <label for="name">Name</label>
+            <input type="text" placeholder="name" name="name">
+            <label for="email">Email</label>
+            <input type="text" placeholder="E-mail" name="email">
+            <button>Add User</button>
+        </form>
+    </div>
+</body>
+</html>
