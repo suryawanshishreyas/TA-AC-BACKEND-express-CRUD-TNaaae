@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>User Page</title>
+        <style>
+            body {
+                background-color: #e09129 !important;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header class="bg-white bg-opacity-5 text-white shadow-lg hidden md:block">
+            <h1>List Of Users</h1>
+            <% user.forEach(user=>{ %>
+                <section>
+                    <p><%= user %></p>
+                    <h2><%= user.name %></h2>
+                    <h2><%= user.email %></h2>
+                    <h2><%= user.age %></h2>
+                </section>           
+            <% })   %>
+            <!-- <% userOne.forEach(user=>{ %>
+                <section>
+                    <h2><%= user.name %></h2>
+                    <h2><%= user.email %></h2>
+                    <h2><%= user.age %></h2>
+                </section>
+            <%  })  %> -->
+        </header>
+    </body>
+</html>
