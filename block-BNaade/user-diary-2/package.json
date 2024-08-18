@@ -20,7 +20,8 @@
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "mongoose": "^8.5.1",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "user-diary-2": "file:"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.6"
