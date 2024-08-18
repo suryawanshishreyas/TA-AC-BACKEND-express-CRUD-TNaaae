@@ -5,5 +5,7 @@
   "main": "",
   "author": "AltCampus",
   "license": "GNU GPL V3",
-  
+  "dependencies": {
+    "altcampus-assignment": "file:"
+  }
 }
