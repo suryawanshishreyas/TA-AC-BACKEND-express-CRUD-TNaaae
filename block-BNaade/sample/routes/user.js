@@ -1,5 +1,5 @@
 var express = require('express')
-var User = require('/sample/models/user')
+var User = require('../models/user')
 var router = express.Router();
 
 router.get('/',async(req,res)=>{
