@@ -1,10 +1,17 @@
 writeCode
 
-Q. Update a user through a update form
+In previous application
 
-- add a update form on GET request on "/users/:userId/edit" route
-- populate the form with already existing user data
-- send form data to another route which is PUT request on '/users/:id' route
-- grab the data from update form
-- update user with new data using `findByIdAndUpdate`
-- redirect to '/users' route i.e. list of users page
+1. Display List of users on a template
+
+- create a route in user router, GET request on "/users"
+- fetch all users from database
+- create users.ejs in views
+- render users.ejs and pass list of users from database as second argument as object
+
+2. Display single user
+
+- create a GET request on "/users/:id"
+- get id using req.params.id
+- fetch user from database using id received from params
+- render singleUser.ejs with single user information.

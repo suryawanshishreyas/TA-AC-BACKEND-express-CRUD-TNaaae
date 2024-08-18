@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,7 @@
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "mongoose": "^8.5.1",
-    "morgan": "^1.10.0",
-    "user-diary-2": "file:"
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.6"
